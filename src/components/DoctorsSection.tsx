@@ -5,8 +5,8 @@ import doctor3 from "@/assets/doctor-3.jpg";
 
 const doctors = [
   { img: doctor1, name: "Dr. Kapil dev sharma", role: "Lead Dental Specialist", intro: "Expert in advanced dental treatments, implants, and comprehensive smile restoration." },
-  { img: doctor2, name: "Dr. Farzana Rahimi", role: "Cosmetic Dentist", intro: "Specialist in smile makeovers, veneers, and natural aesthetic treatments." },
-  { img: doctor3, name: "Dr. Hamid Wahidi", role: "Orthodontist", intro: "Focused on braces, aligners, and bite correction for children and adults." },
+  { img: doctor2, name: "Dr. Priya Verma", role: "Cosmetic Dentist", intro: "Specialist in smile makeovers, veneers, and natural aesthetic treatments." },
+  { img: doctor3, name: "Dr. Rohan Mehta", role: "Orthodontist", intro: "Focused on braces, aligners, and bite correction for children and adults." },
 ];
 
 const DoctorsSection = () => {

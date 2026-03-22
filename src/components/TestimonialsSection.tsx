@@ -4,13 +4,13 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const testimonials = [
-  { name: "Zahra Mohammadi", rating: 5, text: "My smile makeover at this Delhi clinic was excellent. The team explained every step clearly and the results look very natural.", treatment: "Smile Makeover" },
-  { name: "Abdul Rahman", rating: 5, text: "I was nervous about root canal treatment, but the doctors handled it gently and professionally. Pain was minimal and recovery was smooth.", treatment: "Root Canal" },
-  { name: "Nargis Ahmadi", rating: 5, text: "My children are comfortable during every visit. The environment is clean, respectful, and very family friendly.", treatment: "Kids Dentistry" },
-  { name: "Karimullah Safi", rating: 5, text: "I got dental implants here in Delhi and the fit feels perfect. Follow-up care and communication were excellent.", treatment: "Dental Implants" },
-  { name: "Laila Habibi", rating: 5, text: "The cleaning and whitening session was smooth, fast, and very professional. My smile looks brighter than ever.", treatment: "Teeth Whitening" },
-  { name: "Hamidullah Noori", rating: 5, text: "From consultation to implant placement, everything was clearly explained. The doctors were patient and highly skilled.", treatment: "Implant Consultation" },
-  { name: "Mina Qarizada", rating: 5, text: "The clinic is modern and the staff is respectful. I felt comfortable throughout my braces follow-up appointments.", treatment: "Braces & Aligners" },
+  { name: "Riya Sharma", rating: 5, text: "My smile makeover at this Delhi clinic was excellent. The team explained every step clearly and the results look very natural.", treatment: "Smile Makeover" },
+  { name: "Amit Verma", rating: 5, text: "I was nervous about root canal treatment, but the doctors handled it gently and professionally. Pain was minimal and recovery was smooth.", treatment: "Root Canal" },
+  { name: "Neha Gupta", rating: 5, text: "My children are comfortable during every visit. The environment is clean, respectful, and very family friendly.", treatment: "Kids Dentistry" },
+  { name: "Rahul Mehta", rating: 5, text: "I got dental implants here in Delhi and the fit feels perfect. Follow-up care and communication were excellent.", treatment: "Dental Implants" },
+  { name: "Pooja Singh", rating: 5, text: "The cleaning and whitening session was smooth, fast, and very professional. My smile looks brighter than ever.", treatment: "Teeth Whitening" },
+  { name: "Saurabh Jain", rating: 5, text: "From consultation to implant placement, everything was clearly explained. The doctors were patient and highly skilled.", treatment: "Implant Consultation" },
+  { name: "Kavya Arora", rating: 5, text: "The clinic is modern and the staff is respectful. I felt comfortable throughout my braces follow-up appointments.", treatment: "Braces & Aligners" },
 ];
 
 const TestimonialsSection = () => {
