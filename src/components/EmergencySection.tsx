@@ -17,7 +17,7 @@ const EmergencySection = () => {
             Need Urgent Dental Care?
           </h2>
           <p className="text-primary-foreground/80 text-lg mt-4 max-w-lg mx-auto">
-            Do not wait in pain. Our Kabul emergency dental team is available to help you get relief fast.
+            Do not wait in pain. Our Delhi emergency dental team is available to help you get relief fast.
           </p>
           <a
             href="tel:09812009800"
