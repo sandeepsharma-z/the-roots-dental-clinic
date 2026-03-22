@@ -8,29 +8,29 @@ type ChatMessage = {
 
 const quickQuestions = [
   "Hello",
-  "Implant cost kya hai?",
-  "Clinic timing kya hai?",
-  "Tooth pain ke liye kya karein?",
-  "Appointment kaise book karein?",
+  "What is the implant cost?",
+  "What are the clinic timings?",
+  "What should I do for tooth pain?",
+  "How can I book an appointment?",
 ];
 
 const botReply = (input: string) => {
   const q = input.toLowerCase();
 
   if (/(hi|hello|salam|assalam|hey)/.test(q)) {
-    return "Hello! Main The Roots' Dental Clinic assistant hoon. Aap implant, pain, braces, cleaning, timing ya booking ke baare me pooch sakte hain.";
+    return "Hello! I am the The Roots' Dental Clinic assistant. You can ask about implants, pain, braces, cleaning, timings, or booking.";
   }
 
   if (/(implant|daant lagwana|tooth replacement)/.test(q)) {
-    return "Dental implant ka exact cost case, X-ray aur bone condition par depend karta hai. Consultation ke baad personalized plan diya jata hai.";
+    return "The exact dental implant cost depends on your case, X-ray findings, and bone condition. A personalized plan is provided after consultation.";
   }
 
   if (/(cost|price|fees|charges)/.test(q)) {
-    return "Treatment ki final fees diagnosis ke baad confirm hoti hai. Hum transparent estimate consultation ke waqt share karte hain.";
+    return "Final treatment fees are confirmed after diagnosis. We provide a transparent estimate during consultation.";
   }
 
   if (/(pain|dard|toothache|sujaan|swelling)/.test(q)) {
-    return "Agar severe pain ya swelling ho to delay mat karein. Garam-thanda avoid karein aur emergency checkup ke liye clinic visit karein ya call karein: 098120 09800.";
+    return "If you have severe pain or swelling, do not delay. Avoid very hot or cold foods and visit the clinic for an emergency checkup, or call: 098120 09800.";
   }
 
   if (/(timing|hours|open|band|close)/.test(q)) {
@@ -38,26 +38,26 @@ const botReply = (input: string) => {
   }
 
   if (/(appointment|book|booking|schedule)/.test(q)) {
-    return "Appointment ke liye page par Book Now form fill karein ya direct call karein: 098120 09800.";
+    return "To book an appointment, fill the Book Now form on this page or call directly: 098120 09800.";
   }
 
   if (/(address|location|map|kahan)/.test(q)) {
-    return "Clinic location: Rohini, North Delhi, India.";
+    return "Clinic location: Delhi, India.";
   }
 
   if (/(braces|aligner|orthodontic)/.test(q)) {
-    return "Braces aur aligners dono available hain. Best option bite condition aur age ke mutabiq doctor recommend karte hain.";
+    return "Both braces and aligners are available. The best option depends on your bite condition and age, and the doctor will recommend what suits you best.";
   }
 
   if (/(cleaning|scaling|whitening|polish)/.test(q)) {
-    return "Dental cleaning aur whitening dono available hain. Usually cleaning 30-45 min me complete hoti hai.";
+    return "Both dental cleaning and whitening are available. Cleaning is usually completed in 30-45 minutes.";
   }
 
   if (/(emergency|urgent|bleeding|broken tooth)/.test(q)) {
-    return "Emergency case me foran contact karein: 098120 09800. Hum urgent dental pain, fracture aur infection cases handle karte hain.";
+    return "In an emergency, contact us immediately: 098120 09800. We handle urgent cases including dental pain, fractures, and infections.";
   }
 
-  return "Main dental assistant hoon. Aap implants, braces, cleaning, pain, timing, address ya appointment ke baare me specific question poochiye.";
+  return "I am your dental assistant. Please ask a specific question about implants, braces, cleaning, pain, timings, address, or appointments.";
 };
 
 const ChatbotWidget = () => {
@@ -67,7 +67,7 @@ const ChatbotWidget = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: "bot",
-      text: "Assalam o Alaikum! Main aapki dental help ke liye available hoon. Kya aap consultation book karna chahte hain?",
+      text: "Hello! I am here to help with your dental questions. Would you like to book a consultation?",
     },
   ]);
 
